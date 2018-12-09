@@ -13,10 +13,13 @@ class IndexController
 {
     public function index()
     {
+        $page = file_get_contents('https://members.musical-u.com/training/planning/roadmaps/');
+
 
 
         return \View::make('index.index',[
-            'pageTitle'       => 'test page'
+            'pageTitle'       => 'test page',
+            'pageContent'       => $page
         ]);
     }
 }

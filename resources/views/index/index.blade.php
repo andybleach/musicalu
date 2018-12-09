@@ -11,6 +11,7 @@
     <body>
 
     {{ $pageTitle }}
+    {{ $pageContent }}
 
     </body>
 </html>
